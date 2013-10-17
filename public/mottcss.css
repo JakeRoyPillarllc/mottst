@@ -25,3 +25,23 @@ form input.styled {
 	background-color: transparent;
 	border:1px solid rgb(182, 118, 48);
 }
+
+form .styled-checkbox{
+	display:inline;
+	background-color:transparent;
+	border:1px solid rgb(182, 118, 48);
+}
+
+input[type=checkbox]{
+	visibility:hidden;
+}
+
+input[type=checkbox]:checked{
+	  visibility:visible;
+	  content: "x";  
+    color: red;  
+    //font-size: 30px;  
+    text-align: center;  
+    //line-height: 18px;
+
+}
