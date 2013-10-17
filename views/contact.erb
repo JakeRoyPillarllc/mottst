@@ -10,55 +10,63 @@
       	<form id="form" action="/mail_to" method="post" STYLE="FONT-SIZE:10PT;">
       	  <span id="leftCol" style="width:48%;float:left;text-align:left;">
       	  	<label for='fname'>FIRST NAME *</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='First Name' id='fname' type="text" required/><br/><br/>
+            <input class='styled' name='First Name' id='fname' type="text" required/><br/><br/>
             <label for='lname'>LAST NAME *</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='Last Name' id='lname' type="text" required/><br/><br/>
+            <input class='styled' name='Last Name' id='lname' type="text" required/><br/><br/>
             <label for='address'>ADDRESS</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='Address' id='address' type="text"/><br/><br/>
+            <input class='styled' name='Address' id='address' type="text"/><br/><br/>
             <label for='city'>CITY</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='City' id='city' type="text"/><br/><br/>
+            <input class='styled' name='City' id='city' type="text"/><br/><br/>
             <label>WHAT RESIDENCE ARE YOU INTERESED IN?</label><br/>
-            <select name='Residence' style="width:100%;">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select><br/><br/>
+            <div class="styled-select">
+	            <select name='Residence' style="width:100%;">
+	              <option>Option 1</option>
+	              <option>Option 2</option>
+	              <option>Option 3</option>
+	            </select>
+            </div><br/>
             <label>WHAT IS YOUR PRICE RANGE?</label><br/>
-            <select name='Price Range' style="width:100%;">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select><br/><br/>
+            <div class="styled-select">
+	            <select name='Price Range' style="width:100%;">
+	              <option>Option 1</option>
+	              <option>Option 2</option>
+	              <option>Option 3</option>
+	            </select>
+            </div><br/><br/>
              <label for="checkbox1"> ARE YOU REPRESENTED BY A BROKER? <input name="Represented By A Broker" type="checkbox" id="checkbox1"></label><BR/><BR/>
              <label>ADDITIONAL COMMENTS</label><BR/>
              <textarea style="width:208%; height:10%;border:1px solid rgb(182, 118, 48);background-color:transparent;"name='Comments'></textarea>
       	  </span>
       	  <span id="rightCol" style="width:48%;float:right;text-align:left;">
       	  	<label for='phone'>PHONE</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='Phone' id='phone' type="text"><br/><br/>
+            <input class='styled' name='Phone' id='phone' type="text"><br/><br/>
             <label for='email'>EMAIL *</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='Email' id='email' type="text" required><br/><br/>
+            <input class='styled' name='Email' id='email' type="text" required><br/><br/>
             <label for='state'>STATE</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='State' id='state' type="text"><br/><br/>
+            <input class='styled' name='State' id='state' type="text"><br/><br/>
             <label for='zip'>ZIP</label>
-            <input style="float:right;width:65%;background-color: transparent;border:1px solid rgb(182, 118, 48);" name='Zip' id='zip' type="text"><br/><br/>
+            <input class='styled' name='Zip' id='zip' type="text"><br/><br/>
             <label>HOW DID YOU HEAR ABOUT US?</label><br/>
-            <select name='Heard About Us Through' style="width:100%;">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select><br/><br/>
+            <div class="styled-select">
+	            <select name='Heard About Us Through' style="width:100%;">
+	              <option>Option 1</option>
+	              <option>Option 2</option>
+	              <option>Option 3</option>
+	            </select>
+            </div><br/>
             <label>WHAT IS THE MOST IMPORTANT FACTOR?</label><br/>
-            <select name='Most Important Factor' style="width:100%;">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select><br/><br/>
+            <div class="styled-select">
+	            <select name='Most Important Factor' style="width:100%;">
+	              <option>Option 1</option>
+	              <option>Option 2</option>
+	              <option>Option 3</option>
+	            </select>
+            </div><br/><br/>
             <label for="checkbox2">ARE YOU A BROKER? *<input name="Is A Broker" type="checkbox" id="checkbox2"></label>
             <span style="float:right;">* REQUIRED FIELDS</span>
       	  </span>
       	  <span style="clear:both;"></span>
-      	  <input type='submit' value='SUBMIT'>
+      	  <input style="display:none;" type='submit' value='SUBMIT'>
       	</form>
       </div>
 		  </span>
