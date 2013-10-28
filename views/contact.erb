@@ -22,9 +22,10 @@
             <label>WHAT RESIDENCE ARE YOU INTERESTED IN?</label><br/>
             <div class="styled-select">
 	            <select name='Residence' style="width:100%;">
-	              <option>Option 1</option>
-	              <option>Option 2</option>
-	              <option>Option 3</option>
+                    <option></option>
+	              <option>Half-Floor 2-Bedrooms</option>
+	              <option>Full Floor 3-Bedrooms</option>
+	              <option>Penthouse</option>
 	            </select>
             </div><br/>
             <label>WHAT IS YOUR PRICE RANGE?</label><br/>
@@ -59,9 +60,11 @@
             <label>WHAT IS THE MOST IMPORTANT FACTOR?</label><br/>
             <div class="styled-select">
 	            <select name='Most Important Factor' style="width:100%;">
-	              <option>Option 1</option>
-	              <option>Option 2</option>
-	              <option>Option 3</option>
+	              <option></option>
+	              <option>Location</option>
+	              <option>Size</option>
+                    <option>LEED Certification</option>
+                    <option>Amenities</option>
 	            </select>
             </div><br/><br/>
             <label for="checkbox2">ARE YOU A BROKER? * &nbsp;<div class="styled-checkbox"><input name="Is A Broker" type="checkbox" id="checkbox2"></div></label>
@@ -87,6 +90,15 @@ $(".submitImg").hover(function() {
             $(this).attr("src","MOTT_Submit_ON.png");
                   }, function() {
             $(this).attr("src","MOTT_Submit_OFF.png");
+});
+
+$( "#form" ).submit(function(event) {
+                      // Stop form from submitting normally
+                       event.preventDefault();
+                       //ajax request, show modal if form is posted successfully
+                       $.post( "/mail_to", $("#form").serialize(), function(data) {
+                            alert("Thank you for contacting us! Someone will be in touch shortly.")
+                       });       
 });
 </script>
 </html>
