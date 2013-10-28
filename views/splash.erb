@@ -1,12 +1,14 @@
 <html>
 <head>
 		<link rel="stylesheet" href="../mottcss.css">
+		<script type="text/javascript" src="../scripts/jquery.js"></script>
 </head>
-<body style="background-color:rgb(37, 33, 33);">
+<body style="background-color:black;">
 	<div style="width:100%">
 		<div style="margin-left:auto;margin-right:auto;width:auto;text-align:center;">
 	    <a href="/contact">
-		    <img src="HomePlate.png"></img>
+		    <img src="MOTT_Landing.png"></img><br/>
+		    <img class="hack" style="margin-top:-83px;"src="MOTT_Enter_OFF.png"></img>
 	    </a>
 	  </div>
 	  <div style="margin-left:auto;margin-right:auto;">
@@ -19,4 +21,12 @@
 	  </div>
   </div>
 </body>
+
+<script>
+$(".hack").hover(function() {
+		$(this).attr("src","MOTT_Enter_ON.png");
+			}, function() {
+		$(this).attr("src","MOTT_Enter_OFF.png");
+});
+</script>
 </html>

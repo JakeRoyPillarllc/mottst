@@ -1,3 +1,20 @@
+@-moz-document url-prefix() {
+    .hack {
+    	margin-top:-100px !important;
+    }
+}
+
+
+.submitImg{
+	margin-top:40px;
+}
+
+@-moz-document url-prefix() {
+    .submitImg{
+	margin-top:50px !important;
+  }
+}
+
 span{
 	display:inline-block;
 }

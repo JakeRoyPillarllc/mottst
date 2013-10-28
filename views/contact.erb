@@ -1,9 +1,11 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../mottcss.css">
+      <script type="text/javascript" src="../scripts/jquery.js"></script>
+
 </head>
-<body style="background-color:rgb(37, 33, 33);">
-		<div style="background:url(RegisterPlate_border.png) no-repeat center;height:800px;text-align:center;">
+<body style="background-color:black;">
+		<div style="background:url(MOTT_Register.png) no-repeat center;height:800px;text-align:center;">
 			<span style="margin-top:225px;width:800px;">
       <div>
       	PLEASE FILL OUT THIS FORM TO LEARN MORE.<br/><br/>
@@ -17,7 +19,7 @@
             <input class='styled' name='Address' id='address' type="text"/><br/><br/>
             <label for='city'>CITY</label>
             <input class='styled' name='City' id='city' type="text"/><br/><br/>
-            <label>WHAT RESIDENCE ARE YOU INTERESED IN?</label><br/>
+            <label>WHAT RESIDENCE ARE YOU INTERESTED IN?</label><br/>
             <div class="styled-select">
 	            <select name='Residence' style="width:100%;">
 	              <option>Option 1</option>
@@ -66,10 +68,10 @@
             <span style="float:right;">* REQUIRED FIELDS</span>
       	  </span>
       	  <span style="clear:both;"></span>
-      	  <input style="visibility:hidden;" type='submit' value='SUBMIT'>
-      	</form>
       </div>
-		  </span>
+		  </span><br/>
+              <input class="submitImg" type='image' src="MOTT_Submit_OFF.png" value='SUBMIT'>
+            </form>
 		</div>
 </body>
 <div style="margin-left:auto;margin-right:auto;">
@@ -79,5 +81,12 @@
 	    <span style="color:white;font-size:8pt;">
 		THIS ADVERTISEMENT IS NOT AN OFFERING. IT IS A SOLICITATION OF INTEREST IN THE ADVERTISED PROPERTY. NO OFFERING OF THE ADVERTISED UNITS CAN BE MADE AND NO DEPOSITS CAN BE ACCEPTED, OR RESERVATIONS, BINDING OR NON-BINDING, CAN BE MADE UNTIL AN OFFERING PLAN IS FILED WITH THE NEW YORK STATE DEPARTMENT OF LAW. THIS ADVERTISEMENT IS MADE PURSUANT TO COOPERATIVE POLICY STATEMENT NO. 1, ISSUED BY THE NEW YORK STATE DEPARTMENT OF LAW. FILE# CP12-0061. PROPERTY ADDRESS:  199 MOTT STREET, NEW YORK NY 10012. SPONSOR: FIRST MOTT LLC 15 WEST 18TH STREET SUITE 200 NEW YORK NY 10011.
 	    </span>
-	  </div>
+</div>
+<script>
+$(".submitImg").hover(function() {
+            $(this).attr("src","MOTT_Submit_ON.png");
+                  }, function() {
+            $(this).attr("src","MOTT_Submit_OFF.png");
+});
+</script>
 </html>
