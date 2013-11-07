@@ -26,7 +26,7 @@ get '/contact' do
 end
 
 post '/mail_to' do
-  Pony.mail :subject => "Mott St. | New Enquiry Received",
+  Pony.mail :subject => "Mott St. | New Inquiry Received",
             :body    => erb(:email),
             :to => params["Email Address"],
             :bcc => 'info@199mott.com'
