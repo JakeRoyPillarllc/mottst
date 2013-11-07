@@ -52,13 +52,13 @@
       	  </span>
       	  <span id="rightCol" style="width:48%;float:right;text-align:left;">
       	  	<label for='phone'>PHONE</label>
-            <input class='styled' name='Phone' id='phone' type="text"><br/><br/>
+            <input class='styled' name='Phone Number' id='phone' type="text"><br/><br/>
             <label for='email'>EMAIL *</label>
-            <input class='styled' name='Email' id='email' type="text" required><br/><br/>
+            <input class='styled' name='Email Address' id='email' type="text" required><br/><br/>
             <label for='state'>STATE</label>
             <input class='styled' name='State' id='state' type="text"><br/><br/>
             <label for='zip'>ZIP</label>
-            <input class='styled' name='Zip' id='zip' type="text"><br/><br/>
+            <input class='styled' name='Zip Code' id='zip' type="text"><br/><br/>
             <label>HOW DID YOU HEAR ABOUT US?</label><br/>
             <div class="styled-select">
 	            <select name='Heard About Us Through' style="width:100%;">
@@ -117,7 +117,10 @@ $( "#form" ).submit(function(event) {
                        //ajax request, show modal if form is posted successfully
                        $.post( "/mail_to", $("#form").serialize(), function(data) {
                             alert("Thank you for contacting us! Someone will be in touch shortly.")
-                       });       
+                       }).fail(function() {
+                            alert("Oops! Looks like we had trouble sending you a confirmation email. Please Check your email address and try again.");
+                      });        
+                  
 });
 </script>
 </html>
