@@ -1,7 +1,20 @@
+@media only screen and (max-device-width: 500px) {
+  .comments{
+    height:8% !important;
+  }
+}
+
 @-moz-document url-prefix() {
     .hack {
     	margin-top:-100px !important;
     }
+}
+
+.comments{
+   width:208%;
+   height:10%;
+   border:1px solid rgb(182, 118, 48);
+   background-color:transparent;
 }
 
 
